@@ -1,6 +1,6 @@
 <?php
 
-namespace KyoyaDe\RandomString;
+namespace KyoyaDe\RandomString\StringGeneratorBundle;
 
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
