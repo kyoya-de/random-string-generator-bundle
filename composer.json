@@ -4,7 +4,7 @@
   "description": "Bundle to the random string generator in Symfony projects.",
   "minimum-stability": "stable",
   "license": "MIT",
-  "version":"1.0.2",
+  "version":"1.0.3",
   "authors": [
     {
       "name": "Stefan Krenz",
