@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "KyoyaDe\\RandomString\\StringGeneratorBundle\\":"."
+      "KyoyaDe\\RandomString\\GeneratorBundle\\":"."
     }
   }
 }
