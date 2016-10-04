@@ -1,0 +1,22 @@
+parameters:
+  random_string_generator.class: KyoyaDe\Generator\RandomString\Generator
+  random_string_generator.pool.numeric.class: KyoyaDe\Generator\RandomString\CharPool\NumericPool
+  random_string_generator.pool.alpha_lower.class: KyoyaDe\Generator\RandomString\CharPool\AlphaLowerPool
+  random_string_generator.pool.alpha_upper.class: KyoyaDe\Generator\RandomString\CharPool\AlphaUpperPool
+
+services:
+  random_string_generator.pool.numeric:
+    class: "%random_string_generator.pool.numeric.class%"
+
+  random_string_generator.pool.alpha_lower:
+    class: "%random_string_generator.pool.alpha_lower.class%"
+
+  random_string_generator.pool.alpha_upper:
+    class: "%random_string_generator.pool.alpha_upper.class%"
+
+  random_string_generator:
+    class: "%random_string_generator.class%"
+    calls:
+      - [addCharacterPool, ["@random_string_generator.pool.numeric"]]
+      - [addCharacterPool, ["@random_string_generator.pool.alpha_lower"]]
+      - [addCharacterPool, ["@random_string_generator.pool.alpha_upper"]]

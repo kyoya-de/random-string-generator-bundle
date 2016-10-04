@@ -1,0 +1,22 @@
+{
+  "name": "kyoya-de/random-string-generator-bundle",
+  "type": "symfony-bundle",
+  "description": "Bundle to the random string generator in Symfony projects.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stefan Krenz",
+      "email": "info@kyoya.de"
+    }
+  ],
+  "require": {
+    "symfony/http-kernel": "^2.8|^3.0",
+    "kyoya-de/random-string-generator": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "KyoyaDe\\RandomString\\":"."
+    }
+  }
+}
